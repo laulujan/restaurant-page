@@ -1,0 +1,1 @@
+(()=>{window.onload=e=>{a()};const e=["Home","Gallery","Contact"],t=document.getElementById("content");document.createElement("div").classList.add("navbar");const n=e=>{let t=document.createElement("a");t.classList.add("nav-link"),t.setAttribute("href","#"),t.innerText=e,navbarDiv.appendChild(t)},a=()=>{for(let t=0;t<e.length;t++)n(e[t]);t.appendChild(navbarDiv)}})();
