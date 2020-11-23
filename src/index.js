@@ -1,5 +1,5 @@
 import {homepage} from "./modules/home";
-import {gallery} from "./modules/gallery";
+import {menupage} from "./modules/menu";
 import {contactpage} from "./modules/contact";
 
 const InitialLoad = (() => {
@@ -11,7 +11,7 @@ const InitialLoad = (() => {
     }
 
     // Navigation Links
-    const pages = ["Home", "Gallery", "Contact"];
+    const pages = ["Home", "Menu", "Contact"];
 
     // DOM Elements
     const contentDiv = document.getElementById("content");
@@ -22,6 +22,7 @@ const InitialLoad = (() => {
     const navbarDiv = document.createElement("div");
     navbarDiv.classList.add("navbar");
     // Function to create multiple nav links
+  
     function createNavLink(page){
         let navLinkHref = document.createElement("a");
         navLinkHref.classList.add("nav-link");
@@ -32,8 +33,10 @@ const InitialLoad = (() => {
     function createNavBar() {
         for (let i = 0; i < pages.length; i++) {
             createNavLink(pages[i]);
+
         }
         // Appending Elements to Each Other
+
         contentDiv.appendChild(navbarDiv);
     }
 
@@ -50,30 +53,27 @@ const InitialLoad = (() => {
 
     // Navigation Logic
     function navSelection(page) {
-        switch (page) {
-            case 'Home':
-              clearContent();
-              createNavBar();
-              homepage();
-              addLinkEvents();
-              break
-            case 'Gallery':
-              clearContent();
-              createNavBar();
-              gallery();
-              addLinkEvents();
-              break
-            case 'Contact':
-              clearContent();
-              createNavBar();
-              contactpage();
-              addLinkEvents()
-              break
-            default:
-              clear()
-              createNavBar()
-              addClickLinks()
-          }
+        if (page.innerText === "Home") {
+            clearContent();
+            createNavBar();
+            homepage();
+            addLinkEvents();
+        } else if (page.innerText === "Menu") {
+            clearContent();
+            createNavBar();
+            menupage();
+            addLinkEvents();
+        } else if (page.innerText === "About") {
+            clearContent();
+            createNavBar();
+            aboutpage();
+            addLinkEvents();
+        } else if (page.innerText === "Contact") {
+            clearContent();
+            createNavBar();
+            contactpage();
+            addLinkEvents();
+        }
     }
 
     // Adding Event Listeners

@@ -11,10 +11,11 @@ const homepage = function() {
     backgroundImage.setAttribute("src", "https://bit.ly/3kNRKkc");
     const centeredClass = document.createElement("div");
     centeredClass.classList.add("centered");
-    centeredClass.innerText = "Antojito";
+    const title = document.createElement("h2");
+    title.textContent = "Antojito"
     const lineBreak = document.createElement("BR");
     const spanText = document.createElement("span");
-    spanText.classList.add("smaller-text");
+    spanText.classList.add("description");
     spanText.innerText = "Ipsum exercitation ea dolore est irure dolor laboris voluptate aute nostrud velit eu in.";
 
 
@@ -23,7 +24,7 @@ const homepage = function() {
     contentDiv.appendChild(imageDiv);
     imageDiv.appendChild(backgroundImage);
     imageDiv.appendChild(centeredClass);
-    centeredClass.appendChild(lineBreak);
+    centeredClass.appendChild(title);
     centeredClass.appendChild(spanText);
 }
 
