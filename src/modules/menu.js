@@ -3,17 +3,17 @@ const menupage = function() {
         {
             name: "Chilaquiles",
             desc: "Tortilla chips with your prefered protein(cheese, eggs or chicken), select your salsa: Chipotle, Poblano, Mole, Red or Green",
-            img: "https://bit.ly/338jMAK"
+            img: "https://i.ibb.co/0ysrpSV/Photograher-Greg-Dupree-Prop-Stylist-Thom-Driver-Food-Stylist-Chelsea-Zimmer.jpg"
         },
         {
             name: "Tamales",
             desc: "Filled with Pork, Chicken, Corn, Poblano slices with cheese",
-            img: "https://bit.ly/2UQqMOc"
+            img: "https://i.ibb.co/JycQ8xb/23645.jpg"
         },
         {
             name: "Pozole",
             desc: "Pork or chicken home made pozole",
-            img: "https://bit.ly/3373Aj5"
+            img: "https://i.ibb.co/Js01YCM/pozole-victor-protasio2.jpg"
         }
     ]
 

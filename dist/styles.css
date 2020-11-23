@@ -1,32 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap');
 body{
     background-color: #fecd1a;
     margin: auto;
     width: 1280px; 
     height: 960px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 .navbar {
-  background-color: antiquewhite;
+    width: 100%;
+  background-color: #f51077;
   font-size: 20px;
-  height: 2.2em;
+  overflow: auto;
 }
 
 .navbar a {
  margin-left: 30px;
  text-decoration: none;
+ color: white;
 }
 
 .navbar a:hover{
-    color: #81b214;
     font-size: 22px;
+    font-weight: bolder;
 }
 .navbar a:active{
     color: #81b214;
 }
 
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left;
+    }
+    .container{
+        max-width: 500px;
+    }
+}
 
 .restaurant-image img{
-    width: -webkit-fill-available;
+    height: 600px;
+    max-width: 100%;
 
 }
 
@@ -38,7 +54,18 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	text-align: center;
-	stroke: 4px #000000;
-	-webkit-text-stroke: 1px #000000;
+    text-align: center;
+    text-shadow: 2px 2px 2px #706964;
+	
+}
+.centered h2{
+    font-size: 2.6em;
+}
+
+.menu-items img{
+    max-width: 50%;
+    height: auto;
+    display: grid;
+    margin: auto;
+    border-radius: 10%;
 }
